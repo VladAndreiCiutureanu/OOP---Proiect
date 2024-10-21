@@ -1,0 +1,15 @@
+TEMA 2. Magazin online – sistem de gestionare a produselor și a comenzilor
+
+Idei principale:
+
+- Voi crea mai multe clase care vor simula diverse produse/categorii de produse, cu diverse atribute(tip, pret, descriere, etc)
+- Voi crea o clasa care va simula un magazin si mai exact gestionarea inventarului(produsele din inventar vor avea si o cantitate)
+  - Aceasta clasa va permite adaugarea unor produse/categorii de produse, stergerea unor produse/categorii de produse
+  - Voi crea o metoda de afisare a inventarului pe categorii de produse
+  - Voi crea o modalitate de a elimina produsele expirate din categoriile unde acest atribut este relevant
+- Voi utiliza o metoda pentru crearea aleatorie a ofertei de reduceri din momentul rularii programului, care va fi afisata pe ecran si va modifica pretul de baza al produselor respective
+- Voi implementa promotii de tipul "buy 2 get 1 for half the price" pentru anumite categorii de produse
+- Utilizatorul va putea plasa o comanda care sa cuprinda produse si cantitatea lor, iar programul va determina pretul luand in calcul ofertele si promotiile disponibile si le va printa intr-un mod sugestiv
+- Programul va determina validitatea comenzii respective(daca produsul respectiv exista, daca exista destule exemplare, etc...)
+- Intr-un fisier vor fi salvate diverse statistici legate de popularitatea produselor
+- Optiuni diferite pt user si admini
