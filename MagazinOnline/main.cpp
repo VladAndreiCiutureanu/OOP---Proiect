@@ -3,10 +3,9 @@
 using namespace std;
 int main()
 {
-    Produs lapte;
-    Produs* lista = new Produs[100];
-    cout << lista[0];
-    cout << lista[1];
+    Produs lapte("lapte", "praf", "delicios", 5.78);
+    Produs nimic;
     cout << lapte;
+    cout << nimic;
     return 0;
 }

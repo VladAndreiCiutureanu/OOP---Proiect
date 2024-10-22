@@ -17,6 +17,6 @@ Produs::Produs(string name, string category, string description, double price) {
 }
 
 ostream& operator<<(ostream& os, Produs& p) {
-	cout << left << setw(30) << p.name << left << setw(30) << p.category << left << setw(30) << left << setw(30) << p.description << fixed << setprecision(2) << p.price << endl;
+	cout << left << setw(30) << p.name <<"|" << left << setw(30) << p.category << left << setw(30) << left << setw(30) << p.description << fixed << setprecision(2) << p.price << endl;
 	return os;
 }

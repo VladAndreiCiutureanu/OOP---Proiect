@@ -1,6 +1,4 @@
-
 #include <string>
-#include <fstream>
 using namespace std;
 #ifndef PRODUS_H
 #define PRODUS_H
