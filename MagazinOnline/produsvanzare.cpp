@@ -11,7 +11,7 @@ ProdusVanzare::ProdusVanzare(string nume, string categorie, string descriere,dou
 	this->cantitate = cantitate;
 }
 ostream& operator<<(ostream& os, ProdusVanzare& p) {
-	os << left << setw(30) << p.produs.primesteNume()<< "|" << left << setw(30) << p.produs.primesteCategorie() << "|" << left << setw(30) << left << setw(30) << p.produs.primesteDescriere() << "|" <<fixed << setprecision(2) << p.produs.primestePret()<<"|"<<left<<setw(10)<<p.cantitate<< endl;
+	os << left << setw(20) << p.produs.primesteNume()<< "|" << left << setw(20) << p.produs.primesteCategorie() << "|" << left << setw(110) << p.produs.primesteDescriere() << "|" <<left << setw(10) << fixed << setprecision(2) << p.produs.primestePret()<<"|"<<left<<setw(10)<<p.cantitate<< endl;
 	return os;
 }
 istream& operator>>(istream& is, ProdusVanzare& p) {
@@ -31,7 +31,7 @@ istream& operator>>(istream& is, ProdusVanzare& p) {
 	getline(ss, pret, '|');
 	pret = eliminaSpatii(pret);
 	p.produs.seteazaPret(stod(pret));
-	getline(ss, cantitate, ' ');
+	getline(ss, cantitate, '|');
 	cantitate = eliminaSpatii(cantitate);
 	p.cantitate = stoi(cantitate);
 	return is;

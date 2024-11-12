@@ -129,13 +129,61 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="aspirator.cpp" />
+    <ClCompile Include="carnati.cpp" />
+    <ClCompile Include="ciocan.cpp" />
+    <ClCompile Include="croissant.cpp" />
+    <ClCompile Include="cuptor.cpp" />
+    <ClCompile Include="ecler.cpp" />
+    <ClCompile Include="electrocasnice.cpp" />
+    <ClCompile Include="frigider.cpp" />
+    <ClCompile Include="iaurt.cpp" />
+    <ClCompile Include="lactate.cpp" />
+    <ClCompile Include="lapte.cpp" />
+    <ClCompile Include="lopata.cpp" />
+    <ClCompile Include="magazin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="masinadespalat.cpp" />
+    <ClCompile Include="meniu.cpp" />
+    <ClCompile Include="mezeluri.cpp" />
+    <ClCompile Include="patiserie.cpp" />
     <ClCompile Include="produs.cpp" />
+    <ClCompile Include="produsexpirabil.cpp" />
     <ClCompile Include="produsvanzare.cpp" />
+    <ClCompile Include="salam.cpp" />
+    <ClCompile Include="strudel.cpp" />
+    <ClCompile Include="sunca.cpp" />
+    <ClCompile Include="tarnacop.cpp" />
+    <ClCompile Include="telemea.cpp" />
+    <ClCompile Include="unelte.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="aspirator.h" />
+    <ClInclude Include="carnati.h" />
+    <ClInclude Include="ciocan.h" />
+    <ClInclude Include="croissant.h" />
+    <ClInclude Include="cuptor.h" />
+    <ClInclude Include="ecler.h" />
+    <ClInclude Include="electrocasnice.h" />
+    <ClInclude Include="frigider.h" />
+    <ClInclude Include="iaurt.h" />
+    <ClInclude Include="lactate.h" />
+    <ClInclude Include="lapte.h" />
+    <ClInclude Include="lopata.h" />
+    <ClInclude Include="magazin.h" />
+    <ClInclude Include="masinadespalat.h" />
+    <ClInclude Include="meniu.h" />
+    <ClInclude Include="mezeluri.h" />
+    <ClInclude Include="patiserie.h" />
     <ClInclude Include="produs.h" />
+    <ClInclude Include="produsexpirabil.h" />
     <ClInclude Include="produsvanzare.h" />
+    <ClInclude Include="salam.h" />
+    <ClInclude Include="strudel.h" />
+    <ClInclude Include="sunca.h" />
+    <ClInclude Include="tarnacop.h" />
+    <ClInclude Include="telemea.h" />
+    <ClInclude Include="unelte.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
