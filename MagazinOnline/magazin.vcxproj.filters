@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="product.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="store.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="perishableproduct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="householdappliances.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dairy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pastry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="meat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sausage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="salami.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ham.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hammer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shovel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pickaxe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hoover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oven.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="washingmachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="croissant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="eclair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strudel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cheese.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yogurt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="milk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="product.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="perishableproduct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="householdappliances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dairy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pastry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="meat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sausage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="salami.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ham.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hammer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shovel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pickaxe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hoover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="oven.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="washingmachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="croissant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="eclair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strudel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cheese.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="yogurt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="milk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
