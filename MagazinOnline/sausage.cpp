@@ -2,7 +2,7 @@
 Sausage::Sausage() :
 	Meat()
 {
-	this->setExpiryDate("none");
+	this->setDescription("Deliciosi si ideali pentru gratarul perfect");
 	this->setName("Carnati");
 	this->setPrice(10.99);
 }

@@ -1,16 +1,16 @@
-Aspirator           |Electrocasnice      |Performant, ideal pentru curatarea rapida si eficienta a locuintei                                            |700.00    |3
-Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |1500.00   |2
-Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |1000.00   |5
-Frigider            |Electrocasnice      |Spatios, eficient energetic, perfect pentru pastrarea alimentelor proaspete                                   |1400.00   |7
-Carnati             |Mezeluri            |Ideali pentru gatit, prajiti                                                                                  |11.00     |18         |22/05/2026
-Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumat                                                                 |12.50     |23         |25/06/2025
-Sunca               |Mezeluri            |Gust rafinat si textura fina                                                                                  |21.00     |12         |13/12/2024
-Strudel             |Patiserie           |Un desert clasic umplut cu mere coapte si un strop de scortisoara                                             |3.50      |3        |09/07/2025
-Croissant           |Patiserie           |Un deliciu fraged si aerat, cu un gust delicat de unt                                                         |2.00      |2         |17/10/2027
-Ecler               |Patiserie           |Un desert elegant, cu un aluat usor si o crema de vanilie fina                                                |9.60      |6         |25/11/2024
-Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |76.00     |9
-Tarnacop            |Unelte              |Perfect pentru sapaturi adanci si lucrari in teren greu                                                       |142.00    |19
-Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |120.00    |15
-Lapte               |Lactate             |Lapte de calitate superioara                                                                                  |7.00      |8         |30/09/2025
-Telemea             |Lactate             |Produs autentic, textura cremoasa si gust sarat                                                               |16.50     |9         |07/01/2025
-Iaurt               |Lactate             |O adevarata comoara a gustului si sanatatii                                                                   |2.50      |10         |10/02/2026
+Branza              |Lactate             |Branza proaspata, ideala pentru orice tip de preparat                                                         |5.99      |12         |none
+Croissant           |Patiserie           |Delicios, proaspat si pufos                                                                                   |2.99      |32         |none
+Eclair              |Patiserie           |Delicios ecler cu crema de vanilie si glazura de ciocolata                                                    |9.49      |5         |none
+Frigider            |Electrocasnice      |Spatios, eficient energetic, perfect pentru pastrarea alimentelor proasepete                                  |1399.99   |3
+Sunca               |Mezeluri            |Gust rafinat si textura fina                                                                                  |20.99     |2         |none
+Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |75.99     |1
+Aspirator           |Electrocasnice      |Performant, ideal pentru curatarea rapida a locuintei dumneavoastra                                           |699.99    |5
+Lapte               |Lactate             |Lapte proaspat, sanatos si delicios                                                                           |5.89      |7         |none
+Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |1499.99   |8
+Tarnacop            |Unelte              |Perfect pentru sapaturi adanci si lucrari in teren greu                                                       |141.99    |10
+Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumate                                                                |12.49     |11         |none
+Carnati             |Mezeluri            |Deliciosi si ideali pentru gratarul perfect                                                                   |10.99     |12         |none
+Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |119.99    |3
+Strudel             |Patiserie           |Un desert delicios, cu mere si scortisoara                                                                    |3.49      |4         |none
+Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |999.99    |2
+Iaurt               |Lactate             |Iaurt cremos, delicios si sanatos                                                                             |1.99      |1         |none

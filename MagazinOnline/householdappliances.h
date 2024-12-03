@@ -5,6 +5,6 @@ class HouseholdAppliances :
     public Product
 {
 public:
-	HouseholdAppliances(std::string name = "none", std::string description = "none", std::string category = "Household Appliances", double price = 0.0, int quantity = 0);
+	HouseholdAppliances(std::string name = "none", std::string description = "none", std::string category = "Electrocasnice", double price = 0.0, int quantity = 0);
 };
 #endif

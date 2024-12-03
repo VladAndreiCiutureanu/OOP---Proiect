@@ -6,7 +6,7 @@ class Tool :
 	public Product
 {
 public:
-	Tool(std::string name = "none", std::string description = "none", std::string category = "Tools", double price = 0.0, int quantity = 0);
+	Tool(std::string name = "none", std::string description = "none", std::string category = "Unelte", double price = 0.0, int quantity = 0);
 };
 
 

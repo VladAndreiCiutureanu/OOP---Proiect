@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="product.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -90,6 +87,12 @@
     <ClCompile Include="milk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="product.h">
@@ -146,13 +149,7 @@
     <ClInclude Include="washingmachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="croissant.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="eclair.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="strudel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cheese.h">
@@ -162,6 +159,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="milk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strudel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="croissant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

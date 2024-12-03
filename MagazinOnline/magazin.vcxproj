@@ -106,7 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>D:\C++\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\boost_1_86_0\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +153,7 @@
     <ClCompile Include="store.cpp" />
     <ClCompile Include="strudel.cpp" />
     <ClCompile Include="tool.cpp" />
+    <ClCompile Include="user.cpp" />
     <ClCompile Include="washingmachine.cpp" />
     <ClCompile Include="yogurt.cpp" />
   </ItemGroup>
@@ -179,6 +180,7 @@
     <ClInclude Include="store.h" />
     <ClInclude Include="strudel.h" />
     <ClInclude Include="tool.h" />
+    <ClInclude Include="user.h" />
     <ClInclude Include="washingmachine.h" />
     <ClInclude Include="yogurt.h" />
   </ItemGroup>
