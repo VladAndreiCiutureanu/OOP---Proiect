@@ -32,6 +32,7 @@ public:
 	void readInventory();
 	void displayInventory();
 	void test();
+	~Store();
 private:
 	std::vector<Product*> inventory;
 

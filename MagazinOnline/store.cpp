@@ -59,3 +59,9 @@ void Store::displayInventory() {
 		std::cout << *element;
 	}
 }
+Store::~Store()
+{
+	for (auto& element : inventory) {
+		delete element;
+	}
+}
