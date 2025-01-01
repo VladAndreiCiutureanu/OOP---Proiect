@@ -6,16 +6,15 @@ void Store::readInventory()
 	while (getline(fin, line)) {
 		std::stringstream ss(line);
 		if (std::count(line.begin(), line.end(), '|') == 4) {
-			Product p;
-			ss >> p;
-			Product* t = new Product(p);
-			inventory.emplace_back(t);
+			Product* p =  new Product();
+			ss >> *p;
+			inventory.emplace_back(p);
 		}
 		else {
-			PerishableProduct p;
-			ss >> p;
-			Product* t = new PerishableProduct(p);
-			inventory.emplace_back(t);
+			PerishableProduct *p = new PerishableProduct();
+			ss >> *p;
+			p->setExpiryDate("1/1/2001");
+			inventory.push_back(p);
 		}
 	}
 }
