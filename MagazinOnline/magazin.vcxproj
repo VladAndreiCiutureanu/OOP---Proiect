@@ -106,7 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>C:\boost_1_86_0\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\C++\boost_1_86_0;C:\boost_1_86_0\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,59 +130,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cheese.cpp" />
-    <ClCompile Include="croissant.cpp" />
-    <ClCompile Include="dairy.cpp" />
-    <ClCompile Include="eclair.cpp" />
-    <ClCompile Include="fridge.cpp" />
-    <ClCompile Include="ham.cpp" />
-    <ClCompile Include="hammer.cpp" />
-    <ClCompile Include="hoover.cpp" />
-    <ClCompile Include="householdappliances.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="meat.cpp" />
-    <ClCompile Include="milk.cpp" />
-    <ClCompile Include="oven.cpp" />
-    <ClCompile Include="pastry.cpp" />
     <ClCompile Include="perishableproduct.cpp" />
-    <ClCompile Include="pickaxe.cpp" />
     <ClCompile Include="product.cpp" />
-    <ClCompile Include="salami.cpp" />
-    <ClCompile Include="sausage.cpp" />
-    <ClCompile Include="shovel.cpp" />
     <ClCompile Include="store.cpp" />
-    <ClCompile Include="strudel.cpp" />
-    <ClCompile Include="tool.cpp" />
     <ClCompile Include="user.cpp" />
-    <ClCompile Include="washingmachine.cpp" />
-    <ClCompile Include="yogurt.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cheese.h" />
-    <ClInclude Include="croissant.h" />
-    <ClInclude Include="dairy.h" />
-    <ClInclude Include="eclair.h" />
-    <ClInclude Include="fridge.h" />
-    <ClInclude Include="ham.h" />
-    <ClInclude Include="hammer.h" />
-    <ClInclude Include="hoover.h" />
-    <ClInclude Include="householdappliances.h" />
-    <ClInclude Include="meat.h" />
-    <ClInclude Include="milk.h" />
-    <ClInclude Include="oven.h" />
-    <ClInclude Include="pastry.h" />
     <ClInclude Include="perishableproduct.h" />
-    <ClInclude Include="pickaxe.h" />
     <ClInclude Include="product.h" />
-    <ClInclude Include="salami.h" />
-    <ClInclude Include="sausage.h" />
-    <ClInclude Include="shovel.h" />
     <ClInclude Include="store.h" />
-    <ClInclude Include="strudel.h" />
-    <ClInclude Include="tool.h" />
     <ClInclude Include="user.h" />
-    <ClInclude Include="washingmachine.h" />
-    <ClInclude Include="yogurt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

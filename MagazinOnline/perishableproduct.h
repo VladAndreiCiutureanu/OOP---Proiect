@@ -10,8 +10,8 @@ public:
 	PerishableProduct(Product p);
 	std::string getExpiryDate() const { return expiryDate; }
 	void setExpiryDate(std::string expiryDate) { this->expiryDate = expiryDate; }
-	friend std::istream& operator>>(std::istream& in, PerishableProduct& product);
-	friend std::ostream& operator<<(std::ostream& out, const PerishableProduct& product);
+	virtual void print(std::ostream& out) const override;
+	virtual void read(std::istream& in) override;
 private:
 	std::string expiryDate;
 };

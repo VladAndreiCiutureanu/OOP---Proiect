@@ -4,17 +4,14 @@ PerishableProduct::PerishableProduct(std::string name, std::string description, 
 {
 }
 PerishableProduct::PerishableProduct(Product p)
-	: Product(p)
+	: Product(p), expiryDate("none")
 {
-	expiryDate = "none";
 }
-std::ostream& operator<<(std::ostream& out, const PerishableProduct& product)
+void PerishableProduct::print(std::ostream& out) const
 {
-	out << std::left << std::setw(20) << product.getName() << "|" << std::left << std::setw(20) << product.getCategory() << "|" << std::left << std::setw(110) << product.getDescription() << "|" << std::left << std::setw(10) << std::fixed << std::setprecision(2) << product.getPrice() << "|" << std::left << std::setw(10) << product.getQuantity() << "|" << std::left << std::setw(30) << product.getExpiryDate() << std::endl;
-	return out;
+	out << std::left << std::setw(20) << getName() << "|" << std::left << std::setw(20) << getCategory() << "|" << std::left << std::setw(110) << getDescription() << "|" << std::left << std::setw(10) << std::fixed << std::setprecision(2) << getPrice() << "|" << std::left << std::setw(10) << getQuantity() << "|" << std::left << std::setw(10) << expiryDate << std::endl;
 }
-std::istream& operator>>(std::istream& in, PerishableProduct& product)
-{
+void PerishableProduct::read(std::istream& in) {
 	std::string line;
 	std::getline(in, line);
 	std::vector<std::string> tokens;
@@ -23,11 +20,10 @@ std::istream& operator>>(std::istream& in, PerishableProduct& product)
 	{
 		boost::trim(token);
 	}
-	product.setName(tokens.at(0));
-	product.setCategory(tokens.at(1));
-	product.setDescription(tokens.at(2));
-	product.setPrice(std::stod(tokens.at(3)));
-	product.setQuantity(std::stoi(tokens.at(4)));
-	product.setExpiryDate(tokens.at(5));
-	return in;
+	setName(tokens.at(0));
+	setCategory(tokens.at(1));
+	setDescription(tokens.at(2));
+	setPrice(std::stod(tokens.at(3)));
+	setQuantity(std::stoi(tokens.at(4)));
+	setExpiryDate(tokens.at(5));
 }

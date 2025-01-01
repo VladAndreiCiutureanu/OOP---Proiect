@@ -18,6 +18,8 @@ public:
 	std::string getCategory() const { return category; }
 	double getPrice() const { return price; }
 	int getQuantity() const { return quantity; }
+	virtual void print(std::ostream& out) const;
+	virtual void read(std::istream& in);
 	friend std::istream& operator>>(std::istream& in, Product& product);
 	friend std::ostream& operator<<(std::ostream& out, const Product& product);
 private:
