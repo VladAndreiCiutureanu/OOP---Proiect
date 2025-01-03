@@ -12,6 +12,7 @@ public:
 	void setExpiryDate(std::string expiryDate) { this->expiryDate = expiryDate; }
 	virtual void print(std::ostream& out) const override;
 	virtual void read(std::istream& in) override;
+	virtual ~PerishableProduct() = default;
 private:
 	std::string expiryDate;
 };

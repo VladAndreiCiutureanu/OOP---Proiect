@@ -1,14 +1,17 @@
 #ifndef USER_H
 #define USER_H
-#include "product.h"
+#include "store.h"
 #include <vector>
+#include <iostream>
 class User
 {
 public:
-	void menu();
-	bool validate();
-	bool addItem(Product*);
+	User();
+	void welcome();
+	void getOrder();
+	std::vector<Product*> getOrderList() { return order; }
 private:
 	std::vector<Product*> order;
+	Store store;
 };
 #endif

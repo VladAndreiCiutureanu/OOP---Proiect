@@ -106,7 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalIncludeDirectories>D:\C++\boost_1_86_0;C:\boost_1_86_0\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\boost_1_87_0;D:\C++\boost_1_86_0;C:\boost_1_86_0\boost_1_86_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="admin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="perishableproduct.cpp" />
     <ClCompile Include="product.cpp" />
@@ -137,6 +138,7 @@
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="admin.h" />
     <ClInclude Include="perishableproduct.h" />
     <ClInclude Include="product.h" />
     <ClInclude Include="store.h" />

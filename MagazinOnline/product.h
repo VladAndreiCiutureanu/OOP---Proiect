@@ -22,6 +22,7 @@ public:
 	virtual void read(std::istream& in);
 	friend std::istream& operator>>(std::istream& in, Product& product);
 	friend std::ostream& operator<<(std::ostream& out, const Product& product);
+	virtual ~Product() = default;
 private:
 	std::string name;
 	std::string description;
