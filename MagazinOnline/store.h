@@ -22,6 +22,7 @@ public:
 	void checkExpiryDate();
 	void generateOffer();
 	void generatePromotion();
+	double getOrderPrice(std::vector<Product*> order);
 	std::vector<Product*>& getInventory() { return inventory; }
 private:
 	std::vector<Product*> inventory;

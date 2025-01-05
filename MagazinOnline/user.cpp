@@ -1,6 +1,6 @@
 #include "user.h"
 void User::getOrder(std::vector<Product*>& inventory) {
-	std::cout << "Introduceti numele produsului pe care doriti sa il cumparati si cantitatea(stop pentru oprire), separate prin \",\": \n";
+	std::cout << "Introduceti numele produselor pe care doriti sa il cumparati si cantitatea(stop pentru oprire), separate prin \",\": \n";
 	std::string line;
 	int quantity;
 	while (true) {
@@ -26,8 +26,18 @@ void User::getOrder(std::vector<Product*>& inventory) {
 		for (auto& product : inventory) {
 			if (product->getName() == name) {
 				if (product->getQuantity() >= quantity) {
+					if (instanceof<PerishableProduct>(product))
+					{
+						Product* p = new PerishableProduct(*dynamic_cast<PerishableProduct*>(product));
+						p->setQuantity(quantity);
+						order.push_back(p);
+					}
+					else {
+						Product* p = new Product(*product);
+						p->setQuantity(quantity);
+						order.push_back(p);
+					}
 					product->setQuantity(product->getQuantity() - quantity);
-					order.push_back(product);
 				}
 				else {
 					std::cout << "Nu avem suficiente produse in stoc\n";

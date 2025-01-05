@@ -112,21 +112,57 @@ std::vector<int> getCurrentDate() {
 }
 void Store::generateOffer() {
 	srand(time(0));
+	std::vector<int> indices;
 	for (int i = 0; i < 3; i++) {
 		int percentage = rand() % 25 + 1;
 		int index = rand() % inventory.size();
+		while (find(indices.begin(), indices.end(), index) != indices.end())
+		{
+			index = rand() % inventory.size();
+			indices.push_back(index);
+		}
 		double newPrice = inventory.at(index)->getPrice() - (inventory.at(index)->getPrice() * percentage / 100);
 		inventory.at(index)->setPrice(newPrice);
 		std::cout << "Produsul " << inventory.at(index)->getName() << " are o reducere de " << percentage << "%\n";
+		std::cout << "Noul pret este " << newPrice << "\n";
 	}
 }
 void Store::generatePromotion() {
 	//promotie de tipul buy 2 get 1 for half the price
 	srand(time(0));
+	std::vector<int> indices;
 	for (int i = 0; i < 2; i++) {
 		int index = rand() % inventory.size();
+		while (find(indices.begin(), indices.end(), index) != indices.end())
+		{
+			index = rand() % inventory.size();
+			indices.push_back(index);
+		}
 		promotion.push_back(inventory.at(index));
 		std::cout << "La doua produse cumparate de tipul " << inventory.at(index)->getName() << " primiti unul la jumatate de pret\n";
 	}
 
+}
+double Store::getOrderPrice(std::vector<Product*> order) {
+	double price = 0;
+	std::cout << "Comanda dumneavoastra este:\n";
+	for (auto& product : order) {
+		double currentPrice = product->getPrice() * product->getQuantity();
+		int quantity = product->getQuantity();
+		for (auto& promotedProduct : promotion)
+		{
+			if (product->getName() == promotedProduct->getName())
+			{
+				while (quantity > 2) {
+					currentPrice -= product->getPrice() / 2;
+					quantity -= 3;
+				}
+			}
+		}
+		std::cout << product->getName() << " " << product->getQuantity() << " " << currentPrice << "\n";
+		std::cout << "============================\n";
+		price += currentPrice;
+	}
+	std::cout << "Pretul total este: " << price << "\n";
+	return price;
 }
