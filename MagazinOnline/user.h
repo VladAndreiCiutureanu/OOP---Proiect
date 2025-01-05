@@ -6,12 +6,9 @@
 class User
 {
 public:
-	User();
-	void welcome();
-	void getOrder();
+	void getOrder(std::vector<Product*>&inventory);
 	std::vector<Product*> getOrderList() { return order; }
 private:
 	std::vector<Product*> order;
-	Store store;
 };
 #endif

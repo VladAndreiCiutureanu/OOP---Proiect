@@ -1,4 +1,7 @@
 #include "store.h"
+Store::Store() {
+	readInventory();
+}
 void Store::readInventory()
 {
 	std::ifstream file("inventar.txt");
@@ -45,6 +48,7 @@ bool Store::addProduct(Product* p) {
 }
 bool Store::updateFile() {
 	std::ofstream file("inventar.txt");
+	file.clear();
 	if (!file.is_open()) {
 		std::cout << "Eroare la deschiderea fisierului\n";
 		return false;
@@ -107,6 +111,7 @@ std::vector<int> getCurrentDate() {
 	return date;
 }
 void Store::generateOffer() {
+	srand(time(0));
 	for (int i = 0; i < 3; i++) {
 		int percentage = rand() % 25 + 1;
 		int index = rand() % inventory.size();
@@ -117,6 +122,7 @@ void Store::generateOffer() {
 }
 void Store::generatePromotion() {
 	//promotie de tipul buy 2 get 1 for half the price
+	srand(time(0));
 	for (int i = 0; i < 2; i++) {
 		int index = rand() % inventory.size();
 		promotion.push_back(inventory.at(index));

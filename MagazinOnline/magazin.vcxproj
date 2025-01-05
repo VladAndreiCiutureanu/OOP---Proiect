@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="admin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="menu.cpp" />
     <ClCompile Include="perishableproduct.cpp" />
     <ClCompile Include="product.cpp" />
     <ClCompile Include="store.cpp" />
@@ -139,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="admin.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="perishableproduct.h" />
     <ClInclude Include="product.h" />
     <ClInclude Include="store.h" />

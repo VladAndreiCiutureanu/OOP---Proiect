@@ -1,19 +1,5 @@
 #include "user.h"
-User::User()
-{
-	store.readInventory();
-}
-void User::welcome()
-{
-	std::cout << "Bine ati venit la magazinul nostru!\n";
-	std::cout << "Iata ce produse avem:\n";
-	store.displayInventory();
-	std::cout << "Iata ce oferte avem astazi:\n";
-	store.generateOffer();
-	std::cout << "Iata ce promotii avem astazi:\n";
-	store.generatePromotion();
-}
-void User::getOrder() {
+void User::getOrder(std::vector<Product*>& inventory) {
 	std::cout << "Introduceti numele produsului pe care doriti sa il cumparati si cantitatea(stop pentru oprire), separate prin \",\": \n";
 	std::string line;
 	int quantity;
@@ -37,7 +23,7 @@ void User::getOrder() {
 		name = tokens.at(0);
 		quantityString = tokens.at(1);
 		quantity = std::stoi(quantityString);
-		for (auto& product : store.getInventory()) {
+		for (auto& product : inventory) {
 			if (product->getName() == name) {
 				if (product->getQuantity() >= quantity) {
 					product->setQuantity(product->getQuantity() - quantity);

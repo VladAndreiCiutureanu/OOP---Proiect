@@ -13,6 +13,7 @@
 class Store
 {
 public:
+	Store();
 	void readInventory();
 	void displayInventory();
 	~Store();
@@ -21,7 +22,7 @@ public:
 	void checkExpiryDate();
 	void generateOffer();
 	void generatePromotion();
-	std::vector<Product*> getInventory() { return inventory; }
+	std::vector<Product*>& getInventory() { return inventory; }
 private:
 	std::vector<Product*> inventory;
 	std::vector<Product*> promotion;
