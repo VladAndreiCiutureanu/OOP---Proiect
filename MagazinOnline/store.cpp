@@ -53,6 +53,7 @@ bool Store::updateFile() {
 		std::cout << "Eroare la deschiderea fisierului\n";
 		return false;
 	}
+	std::sort(inventory.begin(), inventory.end(), [](Product* a, Product* b) {return a->getCategory() < b->getCategory(); });
 	for (auto& product : inventory) {
 		file << *product;
 	}
@@ -208,4 +209,11 @@ bool Store::removeProduct(std::string name) {
 	}
 	std::cout << "Produsul nu exista in inventar\n";
 	return false;
+}
+void Store::restock(std::string name, int newQuantity) {
+	for (auto& product : inventory) {
+		if (product->getName() == name) {
+			product->setQuantity(product->getQuantity()+newQuantity);
+		}
+	}
 }

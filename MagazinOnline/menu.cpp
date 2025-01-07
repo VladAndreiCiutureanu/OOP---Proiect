@@ -31,6 +31,26 @@ void Menu::adminMenu() {
 	std::cout << "Iata inventarul magazinului:\n";
 	store.displayInventory();
 	std::cout << "============================================================================================================================================================\n";
+	while (true) {
+		std::cout << "Doriti sa restockati un produs? (da/nu)\n";
+		std::string answer;
+		std::cin >> answer;
+		if (answer == "da")
+		{
+			std::cout << "Introduceti numele produsului pe care doriti sa il restockati:\n";
+			std::cin.ignore();
+			std::string name;
+			std::getline(std::cin, name);
+			std::cout << "Introduceti noua cantitate:\n";
+			int newQuantity;
+			std::cin >> newQuantity;
+			store.restock(name, newQuantity);
+		}
+		else {
+			break;
+		}
+	}
+	std::cout << "============================================================================================================================================================\n";
 	store.printWarnings();
 	std::cout << "============================================================================================================================================================\n";
 	std::cout << "Doriti sa eliminati produsele care nu mai exista in stock? (da/nu)\n";
@@ -165,12 +185,9 @@ void Menu::updateStats() {
 void Menu::writeStats() {
 	std::ofstream fout("statistici.txt");
 	fout.clear();
-	int count = 0;
-	int index = stats.size() - 1;
-	while (count < 5 && index >=0) {
-		fout << stats[index].second << "," << stats[index].first << std::endl;
-		count++;
-		index--;
+	for (int i = stats.size() - 1; i >= 0; i--)
+	{
+		fout << stats[i].second << ", " << stats[i].first << std::endl;
 	}
 	fout.close();
 }

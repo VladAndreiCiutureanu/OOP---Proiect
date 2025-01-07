@@ -26,6 +26,7 @@ public:
 	std::vector<Product*>& getInventory() { return inventory; }
 	void printWarnings();
 	void removeUnavailableProducts();
+	void restock(std::string name, int newQuantity);
 private:
 	std::vector<Product*> inventory;
 	std::vector<Product*> promotion;
