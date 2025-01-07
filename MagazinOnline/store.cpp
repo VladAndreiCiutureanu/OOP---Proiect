@@ -60,16 +60,7 @@ bool Store::updateFile() {
 	return true;
 }
 
-bool Store::removeProduct(std::string name) {
-	for (int i = 0; i < inventory.size(); i++) {
-		if (inventory.at(i)->getName() == name) {
-			inventory.erase(inventory.begin() + i);
-			return true;
-		}
-	}
-	return false;
-}
-void Store::checkExpiryDate() {
+void Store::removeExpiredProducts() {
 	std::vector<int> currentDate = getCurrentDate();//date[0] = day, date[1] = month, date[2] = year
 	for (int i = 0; i < inventory.size(); i++) {
 		if (instanceof<PerishableProduct>(inventory.at(i))) {
@@ -83,17 +74,14 @@ void Store::checkExpiryDate() {
 				date.push_back(std::stoi(token));
 			}
 			if (date[2] < currentDate[2]) {
-				std::cout << "Produsul " << inventory.at(i)->getName() << " a expirat\n";
 				inventory.erase(inventory.begin() + i);
 			}
 			else if (date[2] == currentDate[2]) {
 				if (date[1] < currentDate[1]) {
-					std::cout << "Produsul " << inventory.at(i)->getName() << " a expirat\n";
 					inventory.erase(inventory.begin() + i);
 				}
 				else if (date[1] == currentDate[1]) {
 					if (date[0] < currentDate[0]) {
-						std::cout << "Produsul " << inventory.at(i)->getName() << " a expirat\n";
 						inventory.erase(inventory.begin() + i);
 					}
 				}
@@ -119,8 +107,8 @@ void Store::generateOffer() {
 		while (find(indices.begin(), indices.end(), index) != indices.end())
 		{
 			index = rand() % inventory.size();
-			indices.push_back(index);
 		}
+		indices.push_back(index);
 		double newPrice = inventory.at(index)->getPrice() - (inventory.at(index)->getPrice() * percentage / 100);
 		inventory.at(index)->setPrice(newPrice);
 		std::cout << "Produsul " << inventory.at(index)->getName() << " are o reducere de " << percentage << "%\n";
@@ -136,9 +124,10 @@ void Store::generatePromotion() {
 		while (find(indices.begin(), indices.end(), index) != indices.end())
 		{
 			index = rand() % inventory.size();
-			indices.push_back(index);
 		}
 		promotion.push_back(inventory.at(index));
+		indices.push_back(index);
+
 		std::cout << "La doua produse cumparate de tipul " << inventory.at(index)->getName() << " primiti unul la jumatate de pret\n";
 	}
 
@@ -165,4 +154,58 @@ double Store::getOrderPrice(std::vector<Product*> order) {
 	}
 	std::cout << "Pretul total este: " << price << "\n";
 	return price;
+}
+void Store::printWarnings() {
+	for (auto& product : inventory) {
+		if (product->getQuantity() == 0) {
+			std::cout << "ATENTIE!!! Produsul " << product->getName() << " nu mai este in stoc\n";
+		}
+		else {
+			std::vector<int> currentDate = getCurrentDate();//date[0] = day, date[1] = month, date[2] = year
+			for (int i = 0; i < inventory.size(); i++) {
+				if (instanceof<PerishableProduct>(inventory.at(i))) {
+					std::string expiryDate = dynamic_cast<PerishableProduct*>(inventory.at(i))->getExpiryDate();
+					std::vector<int> date;
+					std::vector<std::string> tokens;
+					boost::split(tokens, expiryDate, boost::is_any_of("/"));
+					for (auto& token : tokens)
+					{
+						boost::trim(token);
+						date.push_back(std::stoi(token));
+					}
+					if (date[2] < currentDate[2]) {
+						std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
+					}
+					else if (date[2] == currentDate[2]) {
+						if (date[1] < currentDate[1]) {
+							std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
+						}
+						else if (date[1] == currentDate[1]) {
+							if (date[0] < currentDate[0]) {
+								std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+void Store::removeUnavailableProducts() {
+	for (int i = 0; i < inventory.size(); i++) {
+		if (inventory.at(i)->getQuantity() == 0) {
+			inventory.erase(inventory.begin() + i);
+		}
+	}
+}
+bool Store::removeProduct(std::string name) {
+	for (int i = 0; i < inventory.size(); i++) {
+		if (inventory.at(i)->getName() == name) {
+			inventory.erase(inventory.begin() + i);
+			return true;
+		}
+	}
+	std::cout << "Produsul nu exista in inventar\n";
+	return false;
 }

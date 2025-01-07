@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-	shared_ptr<User> user = make_shared<User>();
+	User user;
 	Menu menu(user);
 	menu.welcome();
 	return 0;

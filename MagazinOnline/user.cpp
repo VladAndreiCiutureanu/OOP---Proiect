@@ -12,6 +12,10 @@ void User::getOrder(std::vector<Product*>& inventory) {
 		if (line == "stop") {
 			break;
 		}
+		if (!isalnum(line[0]))
+		{
+			continue;
+		}
 		std::string name;
 		std::string quantityString;
 		std::vector<std::string> tokens;
@@ -44,5 +48,10 @@ void User::getOrder(std::vector<Product*>& inventory) {
 				}
 			}
 		}
+	}
+}
+User::~User() {
+	for (auto& product : order) {
+		delete product;
 	}
 }

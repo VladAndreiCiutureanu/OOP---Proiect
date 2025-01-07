@@ -1,14 +1,13 @@
-Croissant           |Patiserie           |Delicios, proaspat si pufos                                                                                   |1.34      |25        |13/05/2026
-Eclair              |Patiserie           |Delicios ecler cu crema de vanilie si glazura de ciocolata                                                    |1.58      |50        |23/09/2025
-Frigider            |Electrocasnice      |Spatios, eficient energetic, perfect pentru pastrarea alimentelor proasepete                                  |91.99     |22        
-Sunca               |Mezeluri            |Gust rafinat si textura fina                                                                                  |6.33      |4         |12/12/2025
-Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |31.61     |8         
-Aspirator           |Electrocasnice      |Performant, ideal pentru curatarea rapida a locuintei dumneavoastra                                           |366.43    |8         
-Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |1161.44   |50        
-Tarnacop            |Unelte              |Perfect pentru sapaturi adanci si lucrari in teren greu                                                       |76.57     |8         
-Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumate                                                                |4.95      |8         |11/09/2025
-Carnati             |Mezeluri            |Deliciosi si ideali pentru gratarul perfect                                                                   |5.34      |54        |04/05/2026
-Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |59.80     |30        
-Strudel             |Patiserie           |Un desert delicios, cu mere si scortisoara                                                                    |2.03      |22        |07/08/2025
-Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |305.10    |20        
-Iaurt               |Lactate             |Iaurt cremos, delicios si sanatos                                                                             |1.33      |2         |01/03/2025
+Croissant           |Patiserie           |Delicios, proaspat si pufos                                                                                   |1.07      |16        |13/05/2026
+Eclair              |Patiserie           |Delicios ecler cu crema de vanilie si glazura de ciocolata                                                    |0.64      |31        |23/09/2025
+Frigider            |Electrocasnice      |Spatios, eficient energetic, perfect pentru pastrarea alimentelor proasepete                                  |63.07     |20        
+Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |19.04     |5         
+Aspirator           |Electrocasnice      |Performant, ideal pentru curatarea rapida a locuintei dumneavoastra                                           |142.41    |5         
+Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |459.30    |48        
+Tarnacop            |Unelte              |Perfect pentru sapaturi adanci si lucrari in teren greu                                                       |43.65     |8         
+Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumate                                                                |3.00      |3         |11/09/2025
+Carnati             |Mezeluri            |Deliciosi si ideali pentru gratarul perfect                                                                   |4.52      |49        |04/05/2026
+Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |30.50     |12        
+Strudel             |Patiserie           |Un desert delicios, cu mere si scortisoara                                                                    |1.73      |10        |07/08/2025
+Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |226.08    |6         
+Lapte               |Lactate             |Lapte gustos                                                                                                  |5.28      |1         |09/08/2026

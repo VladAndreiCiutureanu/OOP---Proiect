@@ -19,11 +19,13 @@ public:
 	~Store();
 	bool addProduct(Product* p);
 	bool removeProduct(std::string name);
-	void checkExpiryDate();
+	void removeExpiredProducts();
 	void generateOffer();
 	void generatePromotion();
 	double getOrderPrice(std::vector<Product*> order);
 	std::vector<Product*>& getInventory() { return inventory; }
+	void printWarnings();
+	void removeUnavailableProducts();
 private:
 	std::vector<Product*> inventory;
 	std::vector<Product*> promotion;

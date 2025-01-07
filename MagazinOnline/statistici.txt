@@ -1,0 +1,2 @@
+Lapte,3
+Strudel,2
