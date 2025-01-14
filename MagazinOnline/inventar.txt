@@ -1,18 +1,17 @@
-Laptop              |Device-uri          |Laptop modern, 16GB RAM                                                                                       |1000.99   |10        
-Televizor           |Device-uri          |Televizor 4K                                                                                                  |999.99    |10        
+Televizor           |Device-uri          |Televizor 4K                                                                                                  |939.99    |10        
+Laptop              |Device-uri          |Laptop performant Lenovo                                                                                      |1023.55    |4         
 Frigider            |Electrocasnice      |Spatios, eficient energetic, perfect pentru pastrarea alimentelor proasepete                                  |1136.51   |3         
 Aspirator           |Electrocasnice      |Performant, ideal pentru curatarea rapida a locuintei dumneavoastra                                           |699.99    |5         
-Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |1499.99   |8         
-Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |999.99    |2         
-Branza              |Lactate             |Branza proaspata, ideala pentru orice tip de preparat                                                         |5.99      |12        |07/01/2025
+Cuptor              |Electrocasnice      |Ideal pentru gatit si copt uniform                                                                            |1244.99   |8         
+Masina de spalat    |Electrocasnice      |Descopera puterea unei curatari impecabile cu aceasta masina de spalat inteligenta                            |859.99    |2         
 Lapte               |Lactate             |Lapte proaspat, sanatos si delicios                                                                           |5.89      |7         |10/03/2025
 Iaurt               |Lactate             |Iaurt cremos, delicios si sanatos                                                                             |1.99      |11        |09/11/2025
 Sunca               |Mezeluri            |Gust rafinat si textura fina                                                                                  |20.99     |2         |12/03/2025
-Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumate                                                                |7.03      |11        |07/07/2025
+Salam               |Mezeluri            |Condimentat cu mirodenii delicioase si afumate                                                                |7.03      |14        |07/07/2025
 Carnati             |Mezeluri            |Deliciosi si ideali pentru gratarul perfect                                                                   |10.00     |9         |12/03/2026
 Croissant           |Patiserie           |Delicios, proaspat si pufos                                                                                   |2.99      |32        |10/10/2025
 Eclair              |Patiserie           |Delicios ecler cu crema de vanilie si glazura de ciocolata                                                    |9.49      |15        |03/04/2026
-Strudel             |Patiserie           |Un desert delicios, cu mere si scortisoara                                                                    |3.49      |4         |12/01/2026
-Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |62.31     |0         
+Strudel             |Patiserie           |Un desert delicios, cu mere si scortisoara                                                                    |2.90      |4         |12/01/2026
+Ciocan              |Unelte              |Ideal pentru orice lucrare de constructie sau reparatie                                                       |49.85     |5         
 Tarnacop            |Unelte              |Perfect pentru sapaturi adanci si lucrari in teren greu                                                       |97.12     |6         
-Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |119.99    |3         
+Lopata              |Unelte              |Robusta, ideala pentru gradinarit                                                                             |100.79    |12        

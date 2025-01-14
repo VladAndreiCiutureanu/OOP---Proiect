@@ -27,6 +27,8 @@ public:
 	void printWarnings();
 	void removeUnavailableProducts();
 	void restock(std::string name, int newQuantity);
+	bool checkUnavailableProducts();
+	bool checkExpiredProducts();
 private:
 	std::vector<Product*> inventory;
 	std::vector<Product*> promotion;

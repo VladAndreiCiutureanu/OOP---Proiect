@@ -1,6 +1,7 @@
 Carnati, 15
 Eclair, 10
 Cuptor, 5
+Ciocan, 5
 Tarnacop, 4
 Lapte, 3
 Strudel, 2

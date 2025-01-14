@@ -161,35 +161,32 @@ void Store::printWarnings() {
 		if (product->getQuantity() == 0) {
 			std::cout << "ATENTIE!!! Produsul " << product->getName() << " nu mai este in stoc\n";
 		}
-		else {
-			std::vector<int> currentDate = getCurrentDate();//date[0] = day, date[1] = month, date[2] = year
-			for (int i = 0; i < inventory.size(); i++) {
-				if (instanceof<PerishableProduct>(inventory.at(i))) {
-					std::string expiryDate = dynamic_cast<PerishableProduct*>(inventory.at(i))->getExpiryDate();
-					std::vector<int> date;
-					std::vector<std::string> tokens;
-					boost::split(tokens, expiryDate, boost::is_any_of("/"));
-					for (auto& token : tokens)
-					{
-						boost::trim(token);
-						date.push_back(std::stoi(token));
-					}
-					if (date[2] < currentDate[2]) {
-						std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
-					}
-					else if (date[2] == currentDate[2]) {
-						if (date[1] < currentDate[1]) {
-							std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
-						}
-						else if (date[1] == currentDate[1]) {
-							if (date[0] < currentDate[0]) {
-								std::cout << "ATENTIE!!! Produsul " << inventory.at(i)->getName() << " a expirat\n";
-							}
-						}
+	}
+	std::vector<int> currentDate = getCurrentDate();
+	for (auto& product : inventory) {
+		if (instanceof<PerishableProduct>(product)) {
+			std::string expiryDate = dynamic_cast<PerishableProduct*>(product)->getExpiryDate();
+			std::vector<int> date;
+			std::vector<std::string> tokens;
+			boost::split(tokens, expiryDate, boost::is_any_of("/"));
+			for (auto& token : tokens)
+			{
+				boost::trim(token);
+				date.push_back(std::stoi(token));
+			}
+			if (date[2] < currentDate[2]) {
+				std::cout << "ATENTIE!!! Produsul " << product->getName() << " a expirat\n";
+			}
+			else if (date[2] == currentDate[2]) {
+				if (date[1] < currentDate[1]) {
+					std::cout << "ATENTIE!!! Produsul " << product->getName() << " a expirat\n";
+				}
+				else if (date[1] == currentDate[1]) {
+					if (date[0] < currentDate[0]) {
+						std::cout << "ATENTIE!!! Produsul " << product->getName() << " a expirat\n";
 					}
 				}
 			}
-
 		}
 	}
 }
@@ -216,4 +213,42 @@ void Store::restock(std::string name, int newQuantity) {
 			product->setQuantity(product->getQuantity()+newQuantity);
 		}
 	}
+}
+bool Store::checkUnavailableProducts() {
+	for (auto& product : inventory) {
+		if (product->getQuantity() == 0) {
+			return true;
+		}
+	}
+	return false;
+}
+bool Store::checkExpiredProducts() {
+	std::vector<int> currentDate = getCurrentDate();//date[0] = day, date[1] = month, date[2] = year
+	for (int i = 0; i < inventory.size(); i++) {
+		if (instanceof<PerishableProduct>(inventory.at(i))) {
+			std::string expiryDate = dynamic_cast<PerishableProduct*>(inventory.at(i))->getExpiryDate();
+			std::vector<int> date;
+			std::vector<std::string> tokens;
+			boost::split(tokens, expiryDate, boost::is_any_of("/"));
+			for (auto& token : tokens)
+			{
+				boost::trim(token);
+				date.push_back(std::stoi(token));
+			}
+			if (date[2] < currentDate[2]) {
+				return true;
+			}
+			else if (date[2] == currentDate[2]) {
+				if (date[1] < currentDate[1]) {
+					return true;
+				}
+				else if (date[1] == currentDate[1]) {
+					if (date[0] < currentDate[0]) {
+						return true;
+					}
+				}
+			}
+		}
+	}
+	return false;
 }

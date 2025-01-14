@@ -27,8 +27,10 @@ void User::getOrder(std::vector<Product*>& inventory) {
 		name = tokens.at(0);
 		quantityString = tokens.at(1);
 		quantity = std::stoi(quantityString);
+		bool found = false;
 		for (auto& product : inventory) {
 			if (product->getName() == name) {
+				found = true;
 				if (product->getQuantity() >= quantity) {
 					if (instanceof<PerishableProduct>(product))
 					{
@@ -47,6 +49,9 @@ void User::getOrder(std::vector<Product*>& inventory) {
 					std::cout << "Nu avem suficiente produse in stoc\n";
 				}
 			}
+		}
+		if (!found) {
+			std::cout << "Produsul nu exista in inventar\n";
 		}
 	}
 }
